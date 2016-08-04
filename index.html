@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>NEUROBLOX</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html { height:100% !important; width:100% !important; height: 100% !important; overflow: hidden;}
+        body { font-family: sans-serif; height:100% !important; width:100% !important; }
+        #panel { padding-left: none; padding-right: none; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div style="margin-left: auto; margin-right: auto;">
+        <div class="row" style="width:100% margin: none !important;">
+            <div class="col-sm-9" style="padding:none; padding-left: none; padding-right: none">
+                <div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
+            </div>
+            <div class="col-sm-3" id="panel">
+                <h3 id="block_type">Blockname</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neuroblox Toolbox -->
+    <xml id="toolbox" style="display: none">
+        <category id="catCore" colour="175" name="Core">
+            <block type="dense"></block>
+            <block type="activation"></block>
+        </category>
+        <category id="catCore" colour="100" name="Convolutional">
+            <block type="conv2d"></block>
+        </category>
+        <category id="catCore" colour="50" name="Pooling"></category>
+        <category id="catCore" colour="300" name="Recurrent"></category>
+        <category id="catCore" colour="250" name="Adv Activation"></category>
+        <category id="catCore" colour="25" name="Normalization"></category>
+        <category id="catCore" colour="1" name="Noise"></category>
+
+        <sep></sep>
+
+        <category id="catCore" colour="275" name="Models">
+            <block type="sequential"></block>
+        </category>
+        <category id="catCore" colour="75" name="Optimizer"></category>
+        <category id="catCore" colour="130" name="Loss"></category>
+    </xml>
+
+    <!-- Scripts -->
+    <script src="blockly/blockly_compressed.js"></script>
+    <script src="blockly/blocks_compressed.js"></script>
+    <script src="blockly/msg/js/en.js"></script>
+
+    <!-- Neuroblox Blocks -->
+    <script src="blocks/sequential.js"></script>
+    <script src="blocks/core/dense.js"></script>
+    <script src="blocks/core/activation.js"></script>
+    <script src="blocks/convolution/conv2d.js"></script>
+
+    <script>require('./renderer.js')</script>
+    <script src="js/neuroblox.js"></script>
+</body>
+</html>

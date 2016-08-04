@@ -1,0 +1,22 @@
+<xml id="toolbox" style="display: none">
+    <category id="catCore" colour="175" name="Core">
+        <block type="dense"></block>
+        <block type="activation"></block>
+    </category>
+    <category id="catCore" colour="100" name="Convolutional">
+        <block type="conv2d"></block>
+    </category>
+    <category id="catCore" colour="50" name="Pooling"></category>
+    <category id="catCore" colour="300" name="Recurrent"></category>
+    <category id="catCore" colour="250" name="Adv Activation"></category>
+    <category id="catCore" colour="25" name="Normalization"></category>
+    <category id="catCore" colour="1" name="Noise"></category>
+
+    <sep></sep>
+
+    <category id="catCore" colour="275" name="Models">
+        <block type="sequential"></block>
+    </category>
+    <category id="catCore" colour="75" name="Optimizer"></category>
+    <category id="catCore" colour="130" name="Loss"></category>
+</xml>

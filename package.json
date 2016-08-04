@@ -1,0 +1,25 @@
+{
+  "name": "neuroblox",
+  "version": "0.0.1",
+  "description": "Deep Learning Workflow Interface for Keras",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Keras",
+    "Theano",
+    "deep",
+    "learning",
+    "machine"
+  ],
+  "author": "yutarochan",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
